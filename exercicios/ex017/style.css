@@ -1,0 +1,22 @@
+@charset "UTF8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    /* explicando, um pouco, sobre algumas fontes:
+    > 'Courier New' - uma fonte serifada, mono-espaçada que lembra uma máquina de datilografar. Como o nome da fonte é com posto de duas palavras, ela tem que vim entre aspas simples
+
+    as próximas 3 são fontes bem comuns de se usar:
+    > Arial - fonte "coringa". não-serifada, muito versátio (tanto pela compatibilidade quanto pela facilidade de leitura)
+    > Verdana - fonte não-serifada, um pouco maior que a Arial
+    > Helvetica - fonte não-serifada, um pouco mais fina que a Arial
+    */
+    /* quando se declara várias fontes em seguida (como fizemos) você diz que se, no dispositivo em que o código for abrir, a primeira fontes não for achada, ele procure pela segunda, e assim vá checando, até que chegue na última opção.
+    
+    essa combinação (Arial, Helvetica, sans-serif) é chamada de 'Safe Combination' pois elas tendem a, pelo menos uma delas, funcionar em todo lugar. para pesquisar mais sobre Safe Combination. busque no google (css web safe font combinations) e vá para o link do w3school*/
+
+    /* se, em vez de por o nome da fonte você por (serif, sans-serif ou monospace), todos os lugares aceitaram. Isso acontece porque todo lugar vai ter uma fonte serifada, uma não-serifada e uma mono-espaçada */
+}
+
+h1, h2{ /* forma de declaraão que chamamos de Herança, pois estamos dando características semelhantes a duas partes diferentes */
+    font-family: 'Times New Roman', Times, serif; /* já para os h1 e h2 eu optei por ums Safe Combination serifada */
+}

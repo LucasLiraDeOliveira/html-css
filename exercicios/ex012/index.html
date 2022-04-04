@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        mark{
+            background-color: rgb(122, 245, 204);
+        }
+    </style>
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Você pode fazer na "versão simplificada" que é usar o SRC dentro dos &lt;&gt; da tag <mark>video</mark>, mas esse método da trabalho pois tem navegadores que talvez não sejam compatíveis com o formato de vídeo que você pôs. <br>Por isso devemos fazer feito como faremos a seguir, que assim, estará adaptado a todos os navegadores.</p>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <video width="600" poster="imagens/thumb-campos-lavanda-600.jpg" controls autoplay loop>
+        <source src="midia/Video-Campos-Lavanda-1.m4v" type="video/mp4">
+        <source src="midia/Video-Campos-Lavanda-1.webm" type="video/webm">
+        <source src="midia/video-campos-lavanda.ogv" type="video/ogg">
+        <source src="midia/video-campos-lavanda.mp4" type="video/mp4">
+        <p>Infelizmente seu navegador não tem compatibilidade com reprodução de vídeo.</p>
+    </video>
+
+
+    <h1>Inserindo vídeos do YouTube</h1>
+    <iframe width="600" height="338" src="https://www.youtube.com/embed/eF9Qoc6p_4Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h1>Inserindo vídeos do vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/197093965?h=7fbc516b5a&loop=1&color=ff0179&portrait=0" width="600" height="338" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    <p><a href="https://vimeo.com/197093965" target="_blanc">Reel 2016</a> from <a href="https://vimeo.com/wabbla" target="_blanc">Alvise Zennaro</a>.</p>
+</body>
+</html>

@@ -1,0 +1,195 @@
+@charset "UTF-8";
+
+/* Adicionando fontes: */
+@font-face {
+    font-family: 'idroid';
+    src: url(anexos-d010/fontes/idroid.otf) format('opentype');
+}
+
+body{ /* Configurações gerais do body */
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #84E1AD;
+    margin: 0px;
+}
+
+
+/* CONFIGURAÇÕES DA HEADER */
+header{
+    background-color: darkgreen;
+    margin: 0px;
+    padding: 20px;
+    background-image: linear-gradient(to top, #1A5C38, #3CD680);
+}
+header > h1{
+    text-align: center;
+    color: white;
+}
+header > p{
+    text-align: center;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+h1#titulo{
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav > a.menu{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 20px;
+}
+nav > a.menu:hover{
+    background-color: #4dd3637c;
+}
+
+
+/* CONFIGURAÇÕES DA MAIN */
+main{
+    background-color: white;
+    margin: 0px auto 15px auto;
+    width: 70%;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 1px 3px 7px 1px rgba(0, 0, 0, 0.329);
+}
+
+
+/* CONFIGURAÇÕES DO SECTION */
+section{
+    padding: 20px;
+}
+
+
+/* Configs. da Section da lista */
+section.links{ /* configs. do fundo */
+    background-color: #84e1ac8e;
+    margin: 10px auto 0px auto;
+    width: 85%;
+    padding: 0px; /* fiz isso para que o h3 oculpasse a linha inteira, mas para isso, terei que por o margin no article */
+    border-radius: 10px;
+}
+h4.destaque{ /* configs do título da section */
+    background-color: #3CD680;
+    color: white;
+    margin: 0px 0px 0px 0px;
+    border-radius: 10px 10px 0px 0px; /* Porque o h3 tava cobrindo a curva que já tinha, então tive que fazer de novo */
+    padding: 10px;
+
+}
+section.links > article{ /* já que o pading lateral foi retirado para que o h3 ficasse de lado a lado, temos que adicioná-lo no article */
+    padding: 0px 5px 10px 5px;
+}
+ul{ /* modo de fazer coluna dupla: (APRENDER O QUE ISSO SIGNIFICA!!) */
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+
+
+/* CONFIGURAÇÕES DO ASIDE */
+aside{
+    padding: 20px 20px 10px 20px;
+}
+aside > p{
+    margin: 0px; /* Para que apenas o padding do aside conte e não fique a conta muito confusa */
+}
+
+
+/* CONFIGURAÇÕES DO FOOTER */
+footer{
+    background-color: #1A5C38;
+    color: #84E1AD;
+    font-weight: bold;
+    padding: 5px;
+}
+footer > p{
+    text-align: center;
+    margin: 0px;
+}
+a.final{ /* RESOLVER ISSO DA COR DO FOOTER DEPOIS */
+    color: white;
+    text-decoration: none;
+}
+a.final:visited{
+    color: white;
+}
+span{
+    color: white;
+}
+.surpresa:hover::after {
+    content: ' O BROWNIE!';
+    font-weight: bold;
+    color: white;
+    background-color: rgb(196, 89, 18);
+ }
+
+
+
+/* CONFIGURAÇÕES GERAIS */
+/* Configurando os títulos */
+h1{
+    font-family: 'idroid', Arial, Helvetica, sans-serif;
+    color: #1A5C38;
+}
+h2{
+    background-image: linear-gradient(to right, #84e1ac7e, white 90%);
+    font-family: 'idroid';
+    color: #1A5C38;
+}
+
+
+img{ /* fazer com as img virem block-box para que possam ser centralizadas */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+/* Para cuidar da SECTION que está o vídeo */
+#video{
+    background-color: #1A5C38;
+}
+iframe{
+    margin: 0px auto 0px auto;
+    display: block; /* tive que transformar em block-box para poder centralixar na section */
+}
+
+
+p{
+    text-indent: 30px; /* Forma de identar parágrafos */
+}
+
+
+/* Para configurar os links que iram para links externos */
+a.externo{
+    color: #22722f;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+
+/*ul.coluna{
+    width: 100%;
+}
+ul.coluna > li{
+    display: inline-block;
+    width: 50%;
+}*/
+
+
+
+
+
+/*  */
+
+/*  */
+
+/*  */
+
+/*  */
+

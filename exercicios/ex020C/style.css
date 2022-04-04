@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    color: red;
+    text-decoration: none; /* valor do TEXT-DECORATION que retira o sublinhado */
+    font-weight: bold;
+}
+
+a:visited{ /* Pseudo-classe que se refere a algo já visitado. Nesse caso, um link que já foi visitado */
+    color: darkred;       
+}
+
+a:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+a:active{ /* Pseudo-classe que se refere a quando o elemento está sendo ativado. Nesse caso, um link que está sendo clicado */
+    color: yellow;
+    text-decoration: none;
+}
+
+.especial{
+    background-color: rgb(230, 120, 120);
+}
+
+.especial::before{/* Pseudo-elemento está se referenciando ao que acontecer antes da classe (especial) */
+    content: '⇒ '; /* o síbolo foi adquirido no site da erikasarti, basta procurar no google "simbolos html5" */
+}
+
+.especial::after{/* Pseudo-elemento está se referenciando ao que acontecer depois da classe (especial) */
+    content: ' ⇐';
+}
+
+
+
+
+/* Pseudo-elementos */
+/* 
+    Ele pode agir nas classes, elementos, ids. Eles mexem no conteúdo. Diretamente no conteúdo periférico do elemento 
+
+    um pseudo-elemento é representada apenas no CSS. Ela é representada por :: (dois dois pontos)
+*/
+
+/* 
+    se o exemplo de pseudo-elemento fosse:
+
+    a::after{  
+        (Pseudo-elemento que faz com que apareçam coisas depois de cada elemento. Nesse caso, ele diz que após cada link ele vai ter o que tiver nos parênteses (nesse caso, escrito a palavra [link]))
+
+        content: ' [link]';
+        text-decoration: none;
+        font-weight: normal;
+        color: darkgray;
+    }
+
+    apareceria:
+
+    Canal do curso em vídeo [link]
+    
+
+    Com o pseudo-elemento (::before) ele seria bem semelhante sendo que as coisas que estão dentro do parênteses aconteceriam antes de cada elemento.
+ */
+
+/* 
+    Pseudo-elementos também podem ser associados a id's e classes!
+*/
+
+/* 
+    Revisão dos símbolos vistos nesse Capítulo 15:
+        #  = id
+        .  = class
+        :  = pseudo-class
+        :: = pseudo-element
+        >  = children
+
+    Há mais símbolos, mas por enquanto, esses bastarão.
+*/
+

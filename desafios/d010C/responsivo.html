@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Responsividade</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+
+        main{
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            min-width: 255px; /* 320px era a largura encontrada em muitos dos smartphones mais antigos, mas por conta dos paddings, pomos 255px. */
+            max-width: 800px; /* Essas duas propriedades (min-width e max-width) servem para que caso você tenha uma tela acima do tamanho max-width, ele manterá o tamanho do max-width. e caso você vá diminuindo a tela, independete se passe do tamanho do min-width, ele manterá o tamanho do min-width. Isso fará com que o site tenha um tamanho sempre adaptável ao dispositivo usado. Caso haja mais dúvidas, ver o video 7 do cap 17 do curso do prof. Guanabara. */
+            margin: auto;
+        }
+
+        img{
+            width: 100%; /* Forma de fazer com que a img acompanhe sempre o tamanho do local que ela esteja (no nosso caso, a main) */
+        }
+
+         /*  */
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, exercitationem sunt numquam temporibus fuga doloremque architecto maiores ratione voluptatibus fugiat culpa! Quae deleniti officiis dolore, tempore doloribus accusantium suscipit commodi?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi soluta, voluptatum quis sint tempore eaque molestias aspernatur ipsa. Itaque amet expedita consectetur nulla deleniti impedit reiciendis dolor molestiae, aut suscipit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus amet, omnis, reprehenderit ratione repellendus exercitationem maxime reiciendis voluptas quidem voluptates deserunt autem molestias odio numquam, dolorem architecto esse porro placeat.</p>
+        <picture> <!-- esqueminha para caso ele atinja um tamanho x, ele troque para uma foto menor -->
+            <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg"> <!-- não foi o tamanho da img grande pois, pelas mudança de responsividade feita antes, a img pequena tambem pode aumentar de tamanho para acompanhar. Então para que fique mais agradável, por meio de testes, decidimos por 600pxs -->
+            <img src="imagens/irina-blok.jpg" alt="criadora do bugdroid">
+        </picture>
+        <p><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, exercitationem sunt numquam temporibus fuga doloremque architecto maiores ratione voluptatibus fugiat culpa! Quae deleniti officiis dolore, tempore doloribus accusantium suscipit commodi?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi soluta, voluptatum quis sint tempore eaque molestias aspernatur ipsa. Itaque amet expedita consectetur nulla deleniti impedit reiciendis dolor molestiae, aut suscipit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus amet, omnis, reprehenderit ratione repellendus exercitationem maxime reiciendis voluptas quidem voluptates deserunt autem molestias odio numquam, dolorem architecto esse porro placeat.</p></p>
+    </main>
+</body>
+</html>

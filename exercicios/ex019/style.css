@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+/* 
+    Tudo que em HTML é id    = em CSS é #
+    Tudo que em Html é class = em CSS é .
+*/
+
+body{
+    background-color: #d0f8c7;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: #1D3618;
+}
+
+h2{
+    color: #367c26;
+}
+
+#principal{ /* você também pode se referenciar a ele como h1#principal. A diferença é que do primeiro jeito, tudo que tiver o id (principal) possuirá essas características, ao contrário da segunda que está se referenciando em específico ao h1 que possui o id (principal) */
+    background-color: #367c26;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.basico{
+    color: #367c26;
+    font-weight: bold;
+}
+
+.intermediario{
+    color: #7c7626;
+}
+
+.avancado{
+    color: #7c4f26;
+}
+
+.destaque{
+    background-color: #d2e00e8c;
+} /* classe feita para destacar um texto, se assemelha ao marca-texto. Ela foi criada apenas para exercitar nesse ex */
+
+
+
+
+/* 
+HIERARQUIA ENTRE id, class e o atributo CSS padrão: 
+    (supondo que haja um h1 onde nele há um id, um class e uma configuração do atributo h1 (padrão) na CSS)
+    - Como há a configuração padrão do h1 na CSS, todos os h1 herdarão suas características;
+    - agora no h1 que tenha o id, suas configurações (do id) que colidirem com as configurações (do h1 padrão na CSS), as do id prevalecerão;
+    - agora no h1 que, além do id tenha um class, suas configurações (do class) que colidirem com as configurações (do id), as do id prevalecerão. Mas se as configurações (do class) que colidirem com as configurações (do h1 padrão na CSS), as do class prevalecerão;
+    - Fora as configurações que colidirem, todas as que não colidiram (independe se sejam de id, class ou h1 padrão na CSS) saparecerão nessa tag
+    - resumindo: id > class > config padrão da tag na CSS.
+*/
+
+
+/* id */
+/* 
+    O id server para IDENTIFICAR um determinado elemento ÚNICO n apágina atual. Essa identificação vai nos possibilitar ccriar um estilo especial para u elemento isolado.
+
+    DENTRO DE UM MESMO DOCUMENTO HTML SÓ SE PODE TER 1 id!!
+
+    No nome do identificador NÃO se põe acento!
+
+    No HTML, o id é feito dentro da tag e
+        ex.: <h1 id="NOME DO IDENTIFICADOR">TEXTO DO H1</h1>
+    Já no CSS, nosso id pode ser posto como NOME DA TAG#NOME DO IDENTIFICADOR ou só #NOME DO IDENTIFICADOR
+        ex.: #NOME DO IDENTIFICADOR{
+                ESTILOS;
+             }
+*/
+
+
+/* class */
+/* 
+    Quando queremos dar a mesma característica/configuração a mais de um elemento, não podemos usar o id. Nesse caso usaremos o class. Uma classe também faz a configuração personalizada, mas nela, poderemos ter vários elementos com a mesma classe.
+
+    Não de nome as suas classes pela sua forma, mas sim pela sua funcionalidade! Por exemplo: em vez de chamar sua classe de verde, chame de destaque, porque se seu cliente quiser mudar a cor, você terá uma classe de nome verde, que põe a cor azul e iwsso seria bem estranho!
+
+    No HTML, a classe é feito dentro da tag e
+        ex.: <h2 class="NOME DA CLASSE">TEXTO DO H2</h2>
+    Já no CSS, nossa classe pode ser posto como NOME DA TAG.NOME DA CLASSE ou só .NOME DA CLASSE
+        ex.: .NOME DA CLASSE{
+                ESTILOS;
+             }
+5:40 min de vídeo
+*/
+

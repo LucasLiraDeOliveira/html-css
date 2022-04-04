@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+h1{ /* exemplo de modelo de caixa block-level */
+    background-color: lightgray;
+    height: 300px;
+    width: 300px;
+
+    border: 10px solid darkgreen; /* todos os shorthands abordados nesse código, estarão em forma de comentário ao final */
+
+    padding: 10px;
+
+    margin: 20px auto 50px auto;
+    /* Caso você queira centralizar as margens da esquerda e direita apenas, pode por o valor AUTO no lugar do valor delas.
+        ex.: margin: 50px auto 40px auto 
+    Caso não vá alterar as margens -top e -bottom, basta só por o valor AUTO na margin.
+        ex.: margin: auto */
+
+    outline: 5px dashed salmon;
+}
+
+a{ /* exemplo de modelo de caixa inline-level */
+    border: 10px solid red;
+    padding: 10px;
+}
+
+
+
+/*      MODELO DE CAIXAS (Box Model):
+
+    De forma simples e objetiva, o "Box Model" são containers que armazenam conteúdos ou até mesmo outras caixas 
+*/
+
+/* 
+    Para calcular a largura e altura total de um elemento na tela, some os tamanhos do conteúdo + preenchimento + borda + margem.
+
+    NOVIDADE DAS CSS3: Existe a nova propriedade box-sizing onde podemos definir que as dimensões height e width não são medidas apenas a partir do conteúdo (content-box) e sim pela borda (border-box).
+*/
+
+/* 
+        SOBRE SHORTHANDS ABORDADOR NESSE CÓDIGO
+
+    - Shorthand do BORDER e do OUTLINE se dão na ordem: largura (-width), estilo (-style) e cor (-color);
+
+    - Shorthand do PADDING e do MARGIN tem formas especiais de serem feitos
+        1º) pondo as quatros medidas de uma vez: superior (-top), direita (-right), inferior (-bottom), esquerda (-left)
+            ex.: margin: 0px 10px 20px 30px;
+        2º) pondo apenas uma medidas: esse mesmo valor é aplicado simetricamente a todas as direções
+            ex.: padding: 20px;
+        3º) pondo as medidas de -top e -bottom juntas e as medidas de -right e -left juntos
+            ex.: margin: 10px 20px; (10px de -top e -bottom e 20px de -right e -left)
+ */
+
+/* 
+        Tipos de Caixa
+        
+    Dependendo do comportamento da caixa, podemos classificar um elemento em uma de duas categorias:
+    > Caixa do tipo Block-Level vai se iniciar em uma nova linha e vai ocupar a largura total do elemento onde ele está contido. Se não estiver contido em nenhuma outra caixa, ele vai ocupar 100% da largura do <body>;
+
+    > Caixa do tipo Inline-Level não vai começar em uma nova linha, e sim no ponto exato onde foram definidos. E a largura dele vai ocupar apenas o tamanho relativo ao seu conteúdo.
+*/
+
+/* 
+        MUDANDO O TIPOS DE UMA CAIXA
+
+    Dá para mudar uma caixa de inline para block e vice-e-versa. Para isso usaremos do DISPLAY:
+    > Estando numa caixa INLINE, usaremos o valor BLOCK na CSS dessa caixa
+      EX.: elementos da caixa{
+               display: block;
+            } (issó a transformará em block-box)
+
+    > Estando numa caixa BLOCK, usaremos o valor INLINE na CSS dessa caixa
+      EX.: elementos da caixa{
+               display: inline;
+            } (issó a transformará em inline-box)
+*/
+
+/*  */

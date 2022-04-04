@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras Formatações</h1>
+    <h2>Código-fonte & Pré-formatação</h2>
+    <p>Ocomando <mark>document.getElementById('teste') </mark>é escrito em linguagem JavaScript. <br>Veja que na hora de ler o comando, fica um pouco difícil pois a fonte padrão do HTML não é monoespaçada(com a mesma "largura"/espaçamento). <br> ps.: a linha só está marcada para melhor visualização.</p>
+    <p>Ocomando <mark><code>document.getElementById('teste')</code></mark> é escrito em linguagem JavaScript. <br>Veja que ao ler o comando agora, fica mais fácil pois a fonte que está no código é monoespaçada. E isso aconteceu por conta da tag CODE. <br> ps.: a linha só está marcada para melhor visualização. <br><br></p>
+    <p>veja o código: <br>
+        <code>
+            num = int(input('Digite um número'))
+            if num % 2 ==0:
+                print('O númeor (num) é PAR')
+            else
+                print('O númeor (num) é ÍMPAR')
+            print('Fim do programa')
+        </code>
+        <br>Ele foi sem nenhuma identação pois o a tag CODE pega apenas o conteúdo e expõe (como na tag P).
+    </p>
+    <p>Agora veja esse código: <br>
+        <pre>
+            <code>
+            num = int(input('Digite um número'))
+            if num % 2 ==0:
+                print('O númeor (num) é PAR')
+            else
+                print('O númeor (num) é ÍMPAR')
+            print('Fim do programa')
+            </code>
+        </pre>
+        Ele foi com identação pois o a tag PRE, faz com que tudo que esteja dentro dela (tag CODE,P, etc) seja considerado, INCLUSIVE OS ESPAÇOS DE IDENTAÇÃO.
+    </p>
+    <h2>Citações simples </h2>
+    <p>Como diria o pai de um amigo meu: <q>o computador é um burro muito rápido</q>. <br>Essa aspas foram postas com a tag Q. Fazer uma citação com a tag Q é diferente de só digitar as aspas pois assim você está dando um SENTIDO a frase e não apenas uma FORMA, um sentido de CITAÇÃO</p>
+    <h2>Citações completas</h2>
+    <p>Segundo Jeff Noble, no seu livro HTML para leigos:</p>
+    <blockquote>
+        A diferença entre elementos inline e um bloco de texto é importante, Os elementos HTML nesse capítulo descrevem os blocos de texto.
+    </blockquote cite="https://books.google.com.br/books?id=E8ZtDwAAQBAJ&printsec=frontcover&dq=HTML+para+leigos&hl=pt-PT&sa=X&redir_esc=y#v=onepage&q=HTML%20para%20leigos&f=false">
+    <p>Veja que agora temos um citação em destaque. Isso foi feito com a tag BLOCKQUOTE. Essa tag tem uma particularidade que, dentro dela, podemos por o site de onde vem a citação. <br> Isso acontece com o parâmetro (cite="SITE") dentro da primeira tag BLOCKQUOTE. <br> Esse link não aparecerá para nós mas os mecanismos de busca/o google/a parte interna do meu site vão saber que essa frase está referenciando o link posto pelo parâmetro, na tag. </p>
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText MArkuo Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando</p>
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl"><mark style="background-color: rgb(182, 120, 240);">Estou aprendendo a criar coisas em HTML.</mark></bdo> exemplo de da tag BDO R.</p>
+    <p><bdo dir="ltr"><mark style="background-color: rgb(182, 120, 240);">Estou aprendendo a criar coisas em HTML.</mark></bdo> exemplo de da tag BDO L (Não muda nada pois ele põe from left to right - vulgo, o sentido original da frase).</p>
+    <p><mark style="background-color: rgb(182, 120, 240);">rtl</mark> = da direita para a esquerda (right-to-left)</p>
+    <p><mark style="background-color: rgb(182, 120, 240);">ltr</mark> = da esquerda para adireita (left-to-right)</p>
+</body>
+</html>

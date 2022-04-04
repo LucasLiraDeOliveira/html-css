@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+        *{ /* forma de se declarar uma configuração global das CSS */
+            height: 100%;
+        }
+        body{
+            background-image: linear-gradient(to top, #323061 8%, #5350A1, #7470E0, #7B77ED, #6763C7); 
+            /* 
+            - para fazer o degrade, usaremos a função BACKGROUND-IMAGE com a extensão LINEAR-GRADIENTE. Dentro do parênteses você coloca primeiro a direção do gradiente (que pode ser pela palavra da direção ou pelo angulo em graus), depois coloca a cor do gradiente que começa e por último a cor que finalizará. no final ficará: (direção, cor inicial, cor final);
+            - caso haja mais cores na transição, você vai pondo elas na ordem: (direção, cor inicial, cor 2, cor 3, cor 4, ..., cor final); 
+            - após as cores e antes da virgula, você pode por uma porcentagem. Ela equivalerá a porcentagem da cor na tela. ex.: (direção, cor1, cor2 30%, cor3, cor final), quer dizer que a cor 2 terá 30% desse gradiente;
+            - para pegar um gradiente de uma certa imagem, basta usar a ferramenta de gradiente do adobe collors;
+            - no caso de usar ângulos, usa-se numero mais DEG em vez do º. então fica 45deg, -45deg, 90deg, etc */
+
+            /*Pode-se usar també a extensão RADIAL-GRADIENTE que ela fará o gradiente em formas, por exemplo, circulo, saindo do centro pra fora em camadas circulares*/
+
+            background-attachment: fixed; /* faz com que mesmo se a tela rolar, a css continuará. no caso do gradiente, faz com que ele continue ate o final da rolagem */
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando Gradiente</h1>
+</body>
+</html>

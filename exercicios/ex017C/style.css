@@ -1,0 +1,52 @@
+@charset "UTF8";
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+    /* para trabalharmos o peso da fonte não poderemos usar essas fontes simples (Arial, Helvetica, sans-serif) pois elas tem um peso único. Para isso, nós importamos uma fonte chamada 'Work Sans' por meio do link acima com o @import url*/
+    
+    font-size: 1em;
+
+    /* font-weight */
+    /* font-weight: bolder;  forma de indicar o peso da fonte */
+    /* ele pode aceitar valores literais: lighter, normal, bold, bolder 
+    
+    Também pode aceitar valores numéricos. Esses vão do 100 ao 900, variando de 100 em 100. Dando uma nuance maior de "cores" '
+    
+    mas se usar o (ctrl + espaço) ele mostra as opções de entrada*/
+    /* tomar muito cuidaddo na hora da escrita porque tem muita gente que confunde weight(peso), width(largura) e height(altura) */
+    
+
+    /*font-style*/
+    /*font-style: normal;  serve para você escolher se quer a sua fonte em italico ou normal*/
+
+
+    /*text-decoration*/
+    /*text-decoration: underline;  serve para você escolher se quer a sua fonte sublinhada ou não */
+    
+    /* é recomendado que essas três formas acima em vez de usar as tags que faze o mesmo */
+    /* Mas tem que prestar atenção que nem todas fontes aceitam esses três atributos */
+}
+
+h1{
+    /* essas quatro declarações são usadas demais: 
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 3em;
+    font-style: italic;*/
+
+
+    /* shorthand */
+    /* mas há também uma forma de simplificar essas quatro linhas em uma só usando uma técnica chamada Shorthand (mãozinha).
+
+    No caso, como estamos fazendo um shorthando das fontes, op nome será shorthand font e sua ordem será:
+    font-style -> font-weight -> font-size -> font-family
+    exemplo:*/
+    font: italic bolder 3em 'Work Sans', sans-serif; /* eles não vêm acompanhados de virgula, apenas na parte de dividir as diversas famílias */ /* essa linha conseguiu por tudo o que tinha naquelas 4 linhas no inicio do h1 */
+    /* VOCÊ PODE RETIRAR ALGUMA PROPRIEDADE DO SHORTHAND, CASO NÃO QUEIRA UTILIZAR, MAS NUNCA PODERÁ MUDAR A ORDEM!! */
+
+
+    /* não existe shorthand para tudo!! Mas há vários Shorthands que podemos utilizar */
+
+}

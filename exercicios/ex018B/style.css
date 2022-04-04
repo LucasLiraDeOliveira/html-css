@@ -1,0 +1,74 @@
+@charset "UTF8";
+
+/* O tutorial sobre esse seletor estã após o código css */
+@font-face {
+    font-family: 'Love';
+    src: url('fonts/love larry ttf.ttf') format('truetype'); /* é necessário as aspas simples!!!! */
+    font-weight: normal; /* aqui ele só fala qual peso é preferível e não necessáriamente o que tem que ser toda vez */
+    font-style: normal;
+}
+
+/* isso é um seletor: */
+body{
+    font: 16px Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+h1{
+    font: normal 3em 'Love', Times, serif; /* é necessário por o font-weight para que ele não ponha o font-weigh que ele quiser */
+}
+
+h2{
+    font: 2em Arial, Helvetica, sans-serif;
+}
+
+/* 
+Tem situações onde as fontes do google fonts não supriu a sua necessidade ou o cliente quis uma fonte específica de um site diferente ou de que comprou em site privado e etc. e você terá que baixar a fonte para poder usar em seu código. Segue o passo-a-passo de processo:
+- Vá até um dado site de fontes. Existem vários sites para pergar Fontes Externas gratúitas mas uma que o prof. Guanabara india o site dafont.com
+- Já no site, você escolherá a sua fonte desejada. MAS TOME CUIDADO! PRESTE ATENÇÃO SE A FONTE QUE VOCÊ ESCOLHEU TEM TODOS OS GLIFOS(letras, símbolos, letras acentuadas, etc.) QUE VOCÊS DESEJA UTILIZAR!!
+- Escolha a sua fonte e baixe-a;
+- Depois de descompactar, os arquivos de fontes, els podem vir em dois formatos (ttf e otf) que serão explicados no comentário após esse tutorial. Nem toda fonte te dá os dois formatos, as vezes eles só dão um dos dois formatos;
+-> CASO O CLIENTE JA LHE DE O ARQUIVO DA FONTE, VOCÊ COMEÇARÁ DAQUI!
+- pegue os arquivos e ponha na pasta do seu código;
+
+- Agora você precisará criar o 'font-face' personalizado para que seu código aceite a fonte baixada;
+- O seletor especial que se usa para essa situação se chama: @font-face. Ele se dá assim:
+@font-face{
+    font-family: 'O NOME QUE VOCÊ QUISER DAR';
+    src: url('Nome do arquivo IGUAL AO QUE TÁ NA PASTA') format('o formato desse arquivo'), url('Nome do outro arquivo, IGUAL AO QUE TÁ NA PASTA') format('o formato desse arquivo')    
+    (os tipos de format estarão nos comentários abaixo)
+    (caso haja só um formato, basta parar antes da vírgula antes do segundo url); 
+    (DA PARA ADICIONAR CONFIGURAÇÕES EXTRAS AO font-face:)
+    font-weight: O VALOR QUE DESEJAR;
+    font-style: O VALOR QUE DESEJAR ;  
+}
+
+usando o exemplo baixado (o nosso só teve o ttf, mas vamos supor que teve os dois tipos):
+@font-face{
+    font-family: 'love';
+    src: url('love larry ttf.ttf'), format('truetype'), url('love larry otf.otf') format('opentype'); 
+    font-weight: normal;
+    font-style: normal;    
+}
+*/
+
+/* Tem navegadores que funcionam memlhor com um tipo (ttf of otf) e outros que funcionam melhor com o outro */
+
+/* 
+    Tipos de format()
+    - opentype (usado normalmente quando é otf)
+    - truetype (usado normalmente quando é ttf) **mas a esceções para os dois que são o contrário mas tem que checar 
+    - embedded-opentype
+    - truetype-aat (Apple Advanced Typography)
+    - svg 
+*/
+
+/* 
+ É recomendado que você crie uma pasta fontes para que nela fique todas suas fontes usadas no código. mas para isso teremos que fazer o mesmo como quando pormos as imagens do site numa pasta imagem em vez de solta na pasta do código. Na url() ficará todo o caminho para a fonte:
+   url('NOME DA PASTA/NOME DO ARQUIVO') 
+   url('fonts/love larry ttf.ttf')
+*/
+
+/*  */
+
+/*  */

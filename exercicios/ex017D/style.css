@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+body{
+    font: normal 1em Arial, Verdana, serif;
+    text-align: left; /* por padrão o texto ja vem assim (alinhado a esquerda), mas pus só para mostrar como se faz para alinhar o texto a esquerda */
+}
+
+h1{
+    text-align: center; /* valor do text-align que alinha o texto no centro */
+}
+
+h2{
+    text-align: right; /* valor do text-align que alinha o texto na direita */
+}
+
+p{
+    text-align: justify; /* valor do text-align que alinha o texto de forma que ele fique todo na direita e na esquerda (ocupando todo espaço da linha) */
+    text-indent: 30px;  /* atributo que faz o "parágrafo" (o espacinho na primeira linha de um parágrafo) */
+}

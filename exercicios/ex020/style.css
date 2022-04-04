@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif
+}
+
+div{
+    display: inline-block; /* põe as div's na mesma linha, caso não caibam na tela ele vai pondo la linha de baixo */
+    background-color: lightgrey;
+    border: 1px solid black; /* isso é um shorthand dos atributos border's. Sua ordem aqui é: largura tipo cor */
+    text-align: center;
+    height: 200px; /* altura */
+    width: 200px; /* largura */
+}
+
+
+div:hover{ /* esse valor de pseudo-classe faz com que, ao passar o mouse pelo/por cima do elemento, ele vai fazer o que está nas chaves */
+    background-color: yellow;
+}
+
+
+
+
+/* Pseudo-classes */
+/* 
+    As pseudo-classes tem que está relacionadas a um ELEMENTO ou a uma CLASSE. Elas são relacionadas ao estado de um elemento (se ele está vazio, se ele está marcado, se ele está ativo, se ele tá habilitado, etc.)
+
+    uma pseudo-classe é representada apenas no CSS. Ela é representada por : (dois pontos)
+*/
+/*  */
+

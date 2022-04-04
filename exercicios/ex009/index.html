@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        mark{
+            background-color: rgb(90, 231, 184);
+        }
+    </style>
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas ordenadas</h2>
+    <p>Ao usar a tag <strong>OL</strong> para fazer uma lista, a forma padrão vem assim:</p>
+    <ol>
+        <li>Acordar</li>
+        <li>Ligar para o João</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para a faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o trabalho</li>
+        <li>Voltar para casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>
+    <p>Mas tem dois parâmetros nessa tag que podem fazer modificações: o parâmetro <strong>TYPE</strong> e o parâmetro <strong>START</strong>. <br>No parâmetro Type temos cinco tipos: <mark>1, A, a, I, i</mark></p>
+    <p>Com o <mark>type="1"</mark> é o tipo padrão que ja vem na tag <strong>OL</strong>, a lista fica:</p>
+    <ol type="1">
+        <li>Acordar</li>
+        <li>Ligar para o João</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para a faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o trabalho</li>
+        <li>Voltar para casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>
+    <p>Com o <mark>type="A"</mark> , a lista fica:</p>
+    <ol type="A">
+        <li>Acordar</li>
+        <li>Ligar para o João</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para a faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o trabalho</li>
+        <li>Voltar para casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>
+    <p>Com o <mark>type="a"</mark> , a lista fica:</p>
+    <ol type="a">
+        <li>Acordar</li>
+        <li>Ligar para o João</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para a faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o trabalho</li>
+        <li>Voltar para casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>
+    <p>Com o <mark>type="I"</mark> , a lista fica:</p>
+    <ol type="I">
+        <li>Acordar</li>
+        <li>Ligar para o João</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para a faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o trabalho</li>
+        <li>Voltar para casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>
+    <p>Com o <mark>type="i"</mark> , a lista fica:</p>
+    <ol type="i">
+        <li>Acordar</li>
+        <li>Ligar para o João</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para a faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o trabalho</li>
+        <li>Voltar para casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>
+    <p>No parâmetro <strong>START</strong> você escolhe qual "número" vai começar a contagem da lista. usa-se: start="numero que começará"</p>
+    <ol type="a" start="4">
+        <li>Acordar</li>
+        <li>Ligar para o João</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para a faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o trabalho</li>
+        <li>Voltar para casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>
+    <p>Veja que a contagem da lista acima começa do "d" e não do "a" porque o start foi 4, ai ele começará da quarta letra.</p>
+    <h2>Listas não ordenadas</h2>
+    <p>são listas onde a ordem não é relevante. por exemplo, lista de compras. sua forma padrão é essa:</p>
+    <ul>
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Manteiga</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+    </ul>
+    <p>Mas na Unordered List(ul) também tem o parâmetro <strong>TYPE</strong>. <br>No parâmetro Type, na ul, temos três tipos: <mark>disc, circle, square</mark></p>
+    <p>Com o <mark>type="disc"</mark> é o tipo padrão que ja vem na tag <strong>UL</strong>, a lista fica:</p>
+    <ul type="disc">
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Manteiga</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+    </ul>
+    <p>Com o <mark>type="circle"</mark> , a lista fica:</p>
+    <ul type="circle">
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Manteiga</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+    </ul>
+    <p>Com o <mark>type="square"</mark> , a lista fica:</p>
+    <ul type="square">
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Manteiga</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+    </ul>
+    <h2>Misturando listas</h2>
+    <p>Meus jogos favoritos</p>
+    <ol>
+        <li>NES</li>
+        <ul type="square">
+            <li>Mario Bros</li>
+            <ul type="circle">
+                <li>Mario Bros 3</li>
+                <li>Mario: Lost Levels</li>
+            </ul>
+            <li>Ninja Gaiden</li>
+        </ul>
+        <li>SNES</li>
+        <ul type="square">
+            <li>Mario</li>
+            <li>Donkey Kong</li>
+        </ul>
+        <li>PlayStation</li>
+        <ul type="square">
+            <li>Final Fantasy</li>
+            <li>Castlevania</li>
+        </ul>
+    </ol>
+    <h2>Lista de Definições</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação utilizada para o conteúdo de sites.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a especificação de estilos em sites.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para criar interações em sites.</dd>
+    </dl>
+</body>
+</html>

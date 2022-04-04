@@ -1,0 +1,25 @@
+@charset "UTF8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    /* no FONT-SIZE nós temos:
+    > Medidas Absolutas 
+    - cm, mm, in(polegada), px(pixel), pt(ponto - medida  usada em editores de texto como o Microsoft Word. A recomendação oficial é de usar pt apenas para referenciar conteúdos que serão impressos), pc(paica), etc.
+    - há um grande problema com essas medidas pois sua tv pode mostrar de um jeito, teu celular em outro e teu tablet em outro. até o pixel pode ser apresentado em formas diferentes
+    - se for para usar um desses, a W3C recomenda o px.
+
+    > Medidas Relativas 
+    - em (é uma medida referencial em relação ao tamanho original da fonte. tamanho relativo ao M maiusculo de uma fonte), 
+    ex (é uma medida referencial em relação a altura x da fonte), rem (cemelhante ao 'em' mas é em relação ao root, a fonte que ta configurada no body), 
+    vw (ViewWidth ou largura da viewporte. viewport é o tamanho da tela. ou seja, essa medida se diz em relação a porcetagem/largura da viewport), 
+    vh (medida em relação da altura da viewport), %
+    - O tamanho padrão de uma fonte é geralmente 16px, isso equivale a 1em. sendo redundante-> geralmente 16px = 1em.
+    - se for para usar um desses, a W3C recomenda o em.
+
+    É recomendado usar o 'em' em vez de px pois o 'em' trabalha com PORCENTAGEM DO TAMANHO DA FONTE PADRÃO. Porque quando você estiver mostrando seu trabaho em dispositivos diferentes (como tv, assistentes, celular, tableet e etc) ele estará num tamanho mais proporcional.
+    Já o pixel há telas que usam pixel duplo, triplo, quadruplo, etc. e isso pode dar uma diferença de visibilidade e seu site. essa diferença pode ser pequena? Pode! Mas é melhor não arriscar.
+     */    
+    font-size: 1em; /* Quando for por o tamanho, não se deve ter espaço entre a escala e o número!!! */ 
+    
+}
+

@@ -1,0 +1,46 @@
+@charset "UTF8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    /* height: 100%; */
+}
+
+body {
+    background-image: linear-gradient(to bottom, #025E73, #011F26); /* forma de fazer o gradiente. ela está na BODY  e não na MAIN para que seja o "plano de fundo" e não fique no texto */
+}
+
+main {
+    background-color: white;
+    border-radius: 10px; /* forma bordas arredondadas no conteudo */
+    box-shadow: 5px 5px 15px #67685b9f; /* faz uma sombra em parte do contorno do conteúdo:
+    1º parâmetro: o quanto essa sombra vai andar para o lado;
+    2º parâmetro: o quanto essa sombra vai andar para baixo;
+    3º parâmetro:  o quanto essa sombra vai espalhar;
+    4º parâmetro: a cor e o quanto de transparência essa sombra vai ter */
+    width: 600px; /*  */
+    padding: 10px; /*  */
+    margin: auto; /* margin, determina a margem do conteúdo. o atributo AUTO faz com que o conteúdo sempre se permaneça no centro, independente que largura a página está no momento */
+}
+
+h1 {
+    color: #F2A71B;
+    text-align: center; /* alinha o texto do centrpo */
+    text-shadow: 1px 1px 2px #9667129a; /* também dá para usar ela no teto em sí */
+}
+
+h2 {
+    color: #025E73;
+}
+
+p {
+    text-align: justify;
+}
+
+/*
+Paleta usada:
+#025E73
+#011F26
+#A5A692
+#BFB78F
+#F2A71B
+*/

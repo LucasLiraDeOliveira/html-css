@@ -1,0 +1,379 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); /* fonte do google Fonts */ 
+
+@font-face {
+    font-family: 'Android';
+    src: url(../fontes/idroid.otf) format('opentype');
+} /* A fonte baixada no dafont.com. Teve que usar o .. antes porque ele teve que voltar da pasta estilos, para a pasta principal, para daí ir pra pasta fontes e, assim, para o arquivo */
+
+
+:root{
+    --cor0: #c5ebd6;
+    --cor1: #83E1AD;
+    --cor2: #3DDC84;
+    --cor3: #2FA866;
+    --cor4: #1A5C37;
+    --cor5: #063d1e;
+
+    --font-padrao: Arial, Helvetica, sans-serif;
+    --font-destaque: 'Bebas Neue', cursive; /* esse é o atalho para a chamada da fonte Bebas */
+    --font-android: 'Android', sans-serif; /* esse é o atalho para a chamada da fonte idroid */
+}
+
+*{ /* Forma de fazer declarações globais (que mexem em todas as tags e etc) */
+    margin: 0px;
+    padding: 0px; /* Pus 0px em tudo pois ele põe um tamanha padrão, dificultando meu calculo. Daí zerei tudo para que eu vá alterando as margin e padding manualmente, evitando ocasionais erros. */
+}
+
+
+
+body{
+    background-color: var(--cor0);
+    font-family: var(--font-padrao);
+} 
+
+a.externo::after{
+    content: '\00A0\1F517';
+}
+
+
+
+header{
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+    background-image: linear-gradient(to top, var(--cor5), var(--cor3));
+}
+
+header > h1{
+    color: white;
+    font-family: var(--font-destaque);
+    font-size: 3em;
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.507);
+}
+
+header > p{
+    font-family: var(--font-padrao);
+    font-size: 1.2em;
+    color: white;
+    max-width: 500px;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.205);
+}
+
+
+
+nav{
+    background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.199);
+}
+
+nav > a{
+    color: var(--cor1);
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover{
+    background-color: var(--cor3);
+    color: var(--cor5);
+}
+
+
+
+main{
+    min-width: 255px; 
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 1px 3px 7px 1px rgba(0, 0, 0, 0.329);
+}
+
+main h1{
+    color: var(--cor5);
+    font-family: var(--font-android);
+    font-weight: normal;
+    font-size: 1.8em;
+}
+
+main h2{
+    font-family: var(--font-android);
+    color: var(--cor4);
+    font-size: 1.3em;
+    font-weight: normal;
+    background-image: linear-gradient(to right, var(--cor1),transparent);
+    text-indent: 8px;
+}
+
+main img{
+    width: 100%; /* Forma de fazer com que a img acompanhe sempre o tamanho do local que ela esteja (no nosso caso, a main) */
+    display: block;
+    margin: auto;
+}
+
+main img.pequena{
+    max-width: 350px; /* já que essa img não tem uma versão maior e se ela for muito apliada perderá qualidade. Então, pus p max-width com o tamanho em vez de width com 50%, porque na segunda opção, ele fica muito pequeno */
+    display: block;
+    margin: auto;
+}
+
+main p{ /* o fato de não ter o sinal de > é porque nós estamos dizendo que o p pode está em qualquer nível (dentro de outras grouping tags ou não) */
+    text-indent: 30px; /* Forma de identar parágrafos */
+    margin: 15px 0px;
+    text-align: justify;
+    font-size: 1em;
+    line-height: 1.5em; /* Altura/distância entre as linhas */
+}  
+
+main strong{
+    color: var(--cor4);
+    font-weight: bold;
+}
+
+main a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor1);
+    padding: 2px 6px;
+}
+
+main a:hover{
+    color: var(--cor4);
+    text-decoration: underline;
+}
+
+div.video{
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px; /* ajuste da margem para que cole lateralmente na main */
+    padding: 20px;
+    padding-bottom: 58%;
+    position: relative;
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%; /* Se quisessemos que o vídeo colasse lateralmente na div, bastava por 100 */
+    height: 87.8%; /* ajuste feito para que a barra preta, que equilibra o tamanho do vídeo, não aparecesse */
+}
+
+
+
+aside{ /* configs. do fundo */
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
+}
+
+aside > h3{
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px; /* pus as margens da esquerda, cima e direita negativas para que ele crescesse x pixels para fora em cada direção */
+    border-radius: 10px 10px 0px 0px; /* Porque o h3 tava cobrindo a curva que já tinha, então tive que fazer de novo */
+}
+
+aside > ul{ 
+    list-style-position: inside;
+    columns: 2; 
+    list-style-type: '\2714\00A0\00A0';
+}
+
+
+
+footer{
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: var(--cor1);
+}
+
+
+
+
+
+
+/* 
+    PLANEJAMENTO DO SITE 
+
+>  Ao criar um site, a primeira coisa que devemos fazer, antes mesmo de começar o código, é planejar o nosso site. Inicialmente pensaremos em três coisas:
+1º) Planejar o LAYOUT do nosso site;
+2º) Planejar as CORES do nosso site;
+3º) Planejar as FONTES do nosso site.
+*/
+
+/* 
+    1º) Passo: Planejar o LAYOUT (wireframe)
+     
+Para isso, utilizaremos de um site que é na vibe do Adobe Colors (Um site que não é 100% gratúito, mas sua parte gratúita já faz bastante). Agora iremos ver o passo-a-passo disso:
+- Abriremos o site (mockflow.com);
+- Caso não tenha uma conta, crie e log. Caso tenha, faça o login;
+- A aula 03 do cap 17 o prof. Guanabara da uma introdução no uso do mockflow;
+- Esse video (https://www.youtube.com/watch?v=fiy2VkQ5oVo) pode dar mais informações;
+
+O Mockflow é uma plataforma onde planejaremos a FORMA DO NOSSO SITE, onde poremos os blocos (articles, asides, etc), imagens, videos e mais, tudo ficticio para que possamos ter noção de como nosso site se comportará e para que também tenhamos noção de que BOXES e que ordem usaremos!
+*/
+
+/* 
+    2º) Passo: Planejar as CORES 
+
+Para planejarmos as cores, usaremos o Adobe Collors.
+
+No vídeo da aula 03 do cap. 17 o prof. Guanabara fala sobre, mas no cap. 13 ele fala mais sobre a plataforma.
+
+O Adobe Collors é uma ótima plataforma para se definir as cores de seu site!
+
+ps.: para as cores nesse ex, o prof. se baseou na cor do novo android (a logo mudou, juntamente com a cor do novo android) e o código dessa cor é o  #3DDC84   .
+
+As cores adquiridas com base na cor acima são:
+#3DDC84
+#
+#
+#
+#
+*/
+
+/* 
+    3º) Passo: Planejar as FONTES 
+    
+Para planejar as fonts, normalmente usamos o Google Fonts ou o Dafont.com.
+
+As fonts utilizadas nesse site são Bebas Neue (via google fonts) e idroid (pega no dafont.com).
+
+Preste muito bem atenção quando for escolher uma font! Veja os pesos que ela tem e principalmente os GLIFOS!!! Pois se formos escrever em pt-br e a fonte não tiver os glifos de vogais acentuadas e/ou de simbolos e formos escrever em nosso código, não aparecerão em nosso site.
+*/
+
+
+
+
+/* 
+    PONDO O PRÉ PREPARO EM PRÁTICA
+
+    Agora que o planejamento (wireframe), vamos agora para a construção do site:
+    > Primeiramente, com base no layout planejado, iremos por as nossas Grouping Tags (caixas) no <body>;
+    > Caso você já tenha o txt do site pronto, passe para as caixas devidas. E a partir daí, vá envelopando(Ctrl + shift + p) cada parte e pondo sua tag devida;
+    > Caso não tenha o txt pronto, vá pondo parte-a-parte da estrutura do código (títulos, paragrafos, lista, links, strong e etc.)
+    > Agora adicione os <img> e <video>
+    > Adicione a :root na CSS 
+    > Agora vá atrás de adaptar seu site para que ele fique responsívo
+    > Não se esqueça de comentar seu código para caso vá ver depois ou caso outra pessoa vá ver ser código, possam entender melhor!
+    > Ao ir adicionando elementos na CSS, vá adicionando no seu código de formar que faça sentido. Porque depois, ao adicionar várias coisas, é bem provavel que você se perca, caso não tenha feito com certo padrão. No caso desse código, fui pondo na ordem da página: Declarações gerais, declarações da Header, declarações da Nav, declarações da Main, declarações do Footer.
+    > Vá atrás dos bugs;
+    > Alterne o tamanho da página para checar se a responsividade está ok, caso não, vá corrigir;
+    > se não estiver dando mais erro, finalizamos!
+    > Caso precise, faça futuras alterações.
+*/
+
+
+
+
+/* 
+    Variáveis em CSS
+
+    Por incrível que pareça, dá para declarar variáveis em CSS. Essas variáveis servirão para que você declare elas de forma global, e assim, caso precise fazer alguma alteração em algo, você só precise mudar o valor da variável em vez de mudar o valor em n locais em que esse valor antigo precise ser substituido no código.
+
+    Para declarar variáveis em CSS é necessário criar uma pseudo-classe no início no código (abaixo das fontes!) de nome :root. Essa pseudo-classe define as configurações para a raiz de uma árvore, que vai servir para o documento inteiro.
+
+    ex.: 
+        :root{
+            --cor0: #c5ebd6;
+            --cor1: #83E1AD;
+            --cor2: #3DDC84;
+            --font0: 'Bebas Neue', cursive;
+            --font1: 'Android', sans-serif;
+        }
+    
+        então se for usar uma dessas variaveis, precisa usar utilizando a função var(), assim: 
+
+        body{
+            font-family: var(--font0);
+            color: var(--cor0);
+            background-color: var(--cor1);
+        }
+
+    
+    Esse exemplo acima mostra como declarar as variáveis na :root e como chamá-las em outra parte da CSS. Isso facilita, por exemplo, em caso de querer mudar a --cor1, basta mudar lá na :root em vez de cada quanto onde teria essa cor no código.
+
+    As variáveis personalizadas em CSS devem ter seus nomes iniciando com dois traços obrigatoriamente ! ! !
+*/
+
+
+
+
+/* 
+    Uso do seletor * em CSS
+
+    Existe também um seletor especial das CSS que é o asterisco (*), ele tem uma função muito especial, pois basicamente ele aplica uma configuração padrão para TODOS os elementos do código HTML ao qual o estilo está sendo aplicado. 
+    
+    No nosso caso, para o nosso mini-projeto, nós vamos utilizar esse seletor global para eliminar as eventuais margens que os navegadores (user agents) adicionam a alguns elementos. Isso vai facilitar bastante, pois vai permitir personalizar as medidas que vão aparecer na tela para cada elemento individualmente. 
+*/
+
+
+
+
+/* 
+    RESPONSIVIDADE NOS SITES
+
+    Um site dito responsivo vai ser capaz adaptar os tamanhos dos seus componentes para manter o site plenamente visível em qualquer tela. Isso porque os usuários podem acessar seu site de qualquer dispositivo, com tamanho de telas variados.
+
+
+
+    RESPONSIVIDADE EM IMAGENS:
+
+    > Largura e altura adaptáveis - Usando atibutos como min-width e max-width, podemos determinar o tamanho mínimo e máximo da nossa CAIXA
+    > Adaptando imagens - transformando as <img> em Blok-box, daí seta o width para a porcentagem desejada (muitas vezes o 100% fica legal, dependo da qualidade da imagem), e seta a margem no AUTO
+        
+
+
+    RESPONSIVIDADE EM VÍDEOS:
+
+    Sites como Youtube e Vimeo ja deixam setados os tamanhos de seus vídeos previamente, em sua tag <iframe>. Logo, teremos de usar de certas "gambiarras" para que possamos ajustar nossos vídeos:
+    > Primeiramente, enveloparemos o <iframe> com uma <div>;
+    > Nessa <div> poremos um class de nome video, pois pode haver outros videos em seu site;
+    > Agora que a <iframe> está envelopada na <div>, nós podemos usar aquele artifício das CAIXAS que é a filiação (>). Sem esse artifício nós não poderemos ajustar nosso <iframe>;
+    > Agora na CSS, criaremos a div.video (chamaremos ela de div1 para facilitar) | que nela nós faremos todas as configurações;
+    > Caso necessário, adicione seu background-color, margin, padding, etc.;
+    > (Agora começa a gambiarra). Criaremos a div.video > iframe (chamaremos ela de div2 para facilitar);
+    > Vá na div1 e adicione a declaração (position: relative;) ;
+    > Vá na div2 e adicione a declaração (position: absolute;) ;
+    > vá na div1 e adicione um (padding-bottom: x%). Esse tamanho será adquirido por meio de teste e erro. O que nós queremos com isso é que a div volte a inglobar o vídeo, porque a etapa anterior fez ficar todo cagado. O tamanhho não precisa ficar perfeito, apenas passando do vídeo, que depois ajustaremos;
+    > Agora adicionaremos ao nosso absoluto (div2) um uma propriedade (top: ;) e uma (left: ;). Essas propriedades são a distância dolimite superior do vídeo até e limite superior da div e a distância do limite esquerdo do vídeo até o limite esquerdo da div, respetivamente. Por meio de testes nos poremos os valores (EM PORCENTAGEM) em cada propriedade, para que aumentemos um pouco essas distâncias;
+    > Agora de nossa div2 é absoluta e os valores nela são todos em porcentagens, nós conseguimos ajustas o WIDTH e o HEIGHT do nosso vídeo (valores também em %);
+    > Agora seu vídeo vai está com o tamanho bem responsivo, mas ao clicar para assistir verá que por toda essa gambiarra, aparecerão barras pretas nos cantos para ajustar o vídeo ao tamanho. Para corrigir isso, iremos mudando o padding-bottom, height e/ou width até que consigamos o tamanho desejado;
+    > Fim.  
+*/
+
+
+
+
+/*  */
+/*  */
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        mark{
+            background-color: rgb(247, 131, 156);
+        }
+    </style>
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Teinando o uso de links Externos e Internos</h1>
+    <h2>Usando links externos</h2>
+    <p><strong>Se, ao criar a tag você não referenciar que tem que criar uma nova aba para abrir esse link, ao clicar, ele sobrescreverá a página com esse novo link:</strong></p>
+    <p>Você pode acessar o <a href="https://gustavoguanabara.github.io">repositório do prof. Guanabara no Github</a></p>
+    <p><strong>Isso é a tag A sem nenhum atributo extra (forma padrão).</strong> <br>Os atributos que podem ser agregados a tag A são:</p>
+    <dl>
+        <dt><mark>hreflang</mark></dt>
+        <dd>Permite identificar qual é o idioma principal do site para onde o link está desviando o fluxo da navegação. Isso permite avidar ao navegador e ao software de tradução como lidar caso o visitante opte por traduzir automaticamente os conteúdos.</dd>
+
+        <dt><mark>target</mark></dt>
+        <dd>Atributo que permite controlar onde o site de destino vai abrir: 
+            <dl>
+                <dt><mark style="background-color: rgb(231, 158, 61);">_blank</mark></dt>
+                <dd>Abre o link em uma nova janela em branco;</dd>
+                <dt><mark style="background-color: rgb(231, 158, 61);">_self</mark></dt>
+                <dd>Abre o link na janela, ou frame, atual (padrão);</dd>
+            </dl>
+        </dd>
+
+        <dt><mark>rel</mark></dt>
+        <dd>Recurso que indica qual é a natureza do destino. Ele tem vários valores:
+            <dl>
+                <dt><mark style="background-color: rgb(231, 158, 61);">next</mark></dt>
+                <dd>Indica que o link é para a próxima parte do documento atual;</dd>
+                <dt><mark style="background-color: rgb(231, 158, 61);">prev</mark></dt>
+                <dd>Indica que o link é para a parte anterior do documento atual;</dd>
+                <dt><mark style="background-color: rgb(231, 158, 61);">author</mark></dt>
+                <dd>Indica que é um link para o site do autor do artigo atual;</dd>
+                <dt><mark style="background-color: rgb(231, 158, 61);">external</mark></dt>
+                <dd>Indica que é um link para outro site que não faz parte do site atual;</dd>
+                <dt><mark style="background-color: rgb(231, 158, 61);">nofollow</mark></dt>
+                <dd>Indica que é um link para um site não endossado como um link pago;</dd>
+            </dl>
+        </dd>
+    </dl>
+    <p><br><br> <strong>Para que o link abra em uma noa aba usaremos o atributo target="_blank" e dependendo do link o atributo rel terá um valor diferente:</strong></p>
+    <p>Você também pode acessar o <a href="https://youtube.com/cursoemvideo" target="_blank" rel="external">canal do prof. Guanabara</a><br><br></p>
+
+    <h2>Usando links internos</h2>
+    <p>Essa é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pag002.html" target="_self" rel="next">segunda página</a></p>
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html" target="_self" rel="next">página de notícias</a></p>
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="livros/meulivro.pdf" download="meulivro.pdf" type="application/pdf" target="_blank">Baixe aqui o livro teste em PDF</a></li>
+        <li><a href="livros/cap10.zip" download="cap10.zip" type="application/zip">Baixe o cap 10 compactado em ZIP</a></li>
+        <li><a href="livros/pdfcap10compactado.pdf" download="pdfcap10compactado.pdf" type="application/pdf" target="_blank">Baixe o cap 10 em um pdf compactado</a></li>
+    </ul>
+</body>
+</html>

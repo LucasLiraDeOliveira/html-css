@@ -1,0 +1,40 @@
+@charset "UTF8";
+/* ATENÇÃO!! 
+Tudo que começar com @, em CSS, tem que vir no início e tem que vir fora de um SELETOR!!! */
+
+/* isso é uma regra: */
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* isso é um seletor: */
+body{
+    font: 16px 'Work Sans', Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+h1{
+    font: 3em 'Fredericka the Great', serif;
+}
+
+h2{
+    font: 2em 'Kaushan Script', sans-serif;
+}
+
+/* muitas vezes nos escontramos na ocasião onde as fontes que temos disponíveis não supram a nossa necessidades. para isso podemos recorrer ao banco de dados do google (o Google Fonts) para poderemos pegar diversas fontes (externas) de forma fácil. O link é:
+https://fonts.google.com/
+
+Para escolhermos uma fonte no site: 
+-podemos ir pela categoria (o tipo) da fontes que desejamos e ir vendo as fontes disponíveis até escolher uma;
+- clico na fonte e ele carregará uma nova página;
+- lá você selecionará que estilos deseja;
+- caso queira baixar a fonte, que veremos isso no próximo exemplo, basta clicar em 'download font'. Caso não, basta continuar o tutorial;
+- ao fazer isso, aparecerá uma coluna na lateral direita. caso não apareça, você pode clicar no símbolo (um quadrado que dentro tem três quadrados e um +) no canto superior direito que a coluna aparecerá;
+- lá você poderá rever os estilos selecionados e abaixo terá a parte o 'Use on the web' que serve para copiar o link que será de referencial para seu código pegar a fonte e usar via conexão de internet, em vez de baixada;
+- lá terá duas opções: <link> (para baixar o código em html) e @import (para baixar o código em CSS);
+- pegando ele para CSS, você selecionará tudo que está dentro da tag <style> menos a tag propriamente dita 
+- agora basta colar o @import na sua CSS*/
+
+/* font-style -> font-weight -> font-size -> font-family */

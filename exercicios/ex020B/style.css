@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif
+}
+
+div > p{ /* Isso quer dizer: um parágrafo que está dentro/ que é filho de uma div. Então, ele não mexerá em qualquer <p> mas sim em um que esteja dentro (que seja filho) de uma div. */
+    display: none; /* vai esconder o parágrafo que está dentro da div
+    (representado em CSS como div > p) através da propriedade display com o valor none */
+}
+
+div:hover > p{ /* Isso quer dizer: quando eu passar o mouse em cima da div, o parágrafo que está dentro vai fazer o que tiver nas chaves */
+    display: block; /* fará com que esses parágrafos, que estavam escondidos, voltem a aparecer, ENQUANTO O MOUSE ESTIVER EM CIMA */
+    color: white;
+    background-color: red;
+    width: 200px;
+}
+
+div:hover{
+    color: red;
+}
+
+/* o que foi posto nas linhas 7, 11 e 18 compõs o que se chamaria de protótipo inicial de menus */
+/*  */

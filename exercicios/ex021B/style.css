@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: dimgray;
+    margin: 0px;
+}
+
+header{
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+nav{
+    background-color: rgb(102, 102, 102);
+    padding: 3px;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.329); /* isso é o shorthand para por sombras, sua ordem é:
+    deslocamento horizontal, deslocamento vertical, espalhamento, sombra. O quarto elemento de px vem de quando você faz a adição manual via DevTools.
+    não precisa ficar tão noiado com isso, essa configuração que foi posta (1px 1px 1px black) ja é bem padrão e no máximo, precise de leves adaptações */
+    /* Caso não tenha posto o box-shadow e queira antes fazer um teste visual no site:
+    - Vá ao DevTools;
+    - vá no elemento que queira adicionar a sombra;
+    - la em baixo no styles, ao lado no elemento selecionado, aparecerá 3 bolinas;
+    - clique nelas e depois em box shadows;
+    - no quadradinho que aparecer, ajuste a sombra como desejar;
+    - copie o código do box-shadow e cole no seu código;
+    - caso queira ver mais, va no vídeo da aula 5 do capítulo 16. */
+}
+
+nav > a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-right: 30px; /* para separar um link do outro */
+}
+
+nav > a:hover{
+    color: yellow;
+    text-decoration: underline;
+}
+
+main{
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px 0px; /* serve para arredonar as bordas. isso é um shorthand de: 
+    > pondo quatro valores cada um terá um valor nessa ordem - border-top-left-radius, border-top-right-radius, border-bottom-right-radius, border-bottom-left-radius
+    > pondo um só valor - todas as bordas terão o mesmo valor
+    > pondo dois valores - os dois pares de bordas diagonais, cada um terá um do dois valores. uma dupla com um e outra com outro; */
+    box-shadow: 4px 4px 49px 1px rgba(0, 0, 0, 0.411);
+}
+
+article{
+    background-color: lightgray;
+    padding: 5px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 4px;
+    margin: opx;
+}
+
+footer > p{
+    margin: 0px;
+}
+
+.surpresa:hover::after {
+    content: ' O BROWNIE!';
+    font-weight: bold;
+    color: white;
+    background-color: rgb(90, 22, 22);
+}
+
+div.bola{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 50%; /* outra forma de dar o valor da borda */
+}
+div.bola > p{
+    text-align: center;
+}
+
+p.checar{
+    font-weight: bolder;
+    background-color: yellow;
+    border-radius: 20%;
+}
+
+
+/*  */
+
+/*  */
+
+/*  */
+
+/*  */
+
+
+/* 
+    DEU ERRADO ESSA TENTATIVA DE TENTAR IMPLEMENTAR O SISTEMA DO HOVER DE EXS PASSADOS AQUI. DEPOIS CHECAR O PORQUÊ: 
+    
+    .surpresa {
+    background-color: blueviolet;
+} 
+
+.surpresa > p{
+    display: none;
+}
+
+.surpresa:hover > p{
+    display: block;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(70, 17, 17);
+}*/
+
